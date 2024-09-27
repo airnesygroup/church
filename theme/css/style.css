@@ -1104,13 +1104,25 @@ section,
   background: linear-gradient(90deg, rgb(25, 233, 233), rgb(113, 19, 219)); /* Gradient applied directly */
 }
 
+.about p {
+  
+  color: #ffffff;
+  padding-bottom: 5%;
 
+}
+
+
+.about img {
+  
+border-radius: 14px;
+
+}
 
 .about h3 {
   font-weight: 700;
   font-size: 64px;
   margin-bottom: 20px;
-  color: #f1f4fa;
+  color: #ffffff;
   padding-right: 100px;
 
 }
@@ -1122,6 +1134,7 @@ section,
 .about .content ul {
   list-style: none;
   padding: 0;
+  
 }
 
 .about .content ul li {
@@ -1160,7 +1173,7 @@ section,
 }
 
 .generosity {
-  background-image: url("../images/background/banner-bg-two.jpg");
+  background-image: url("../images/background/church5.jpg");
   background-position: left center !important;
   background-attachment: fixed !important;
   background-repeat: no-repeat !important;
@@ -1174,7 +1187,7 @@ section,
   top: 0; /* Align to the top edge */
 
   /* Add an overlay for opacity control */
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+  background-color: rgba(0, 0, 0, 0.712); /* Dark overlay with 50% opacity */
   background-blend-mode: overlay; /* Blend the overlay with the background image */
 }
 
@@ -1266,6 +1279,20 @@ section,
   color: #f1f4fa;
 }
 
+.about2 p {
+  
+  color: #ffffff;
+  padding-bottom: 5%;
+
+}
+
+
+.about2 img {
+  
+border-radius: 14px;
+
+}
+
 .about2 .fst-italic {
   color: #f1f4fa; /* Default color mix fallback */
   color: color-mix(in srgb, var(--default-color, #f1f4fa), var(--contrast-color, #000000) 50%);
@@ -1353,7 +1380,7 @@ section,
 --------------------------------------------------------------*/
 
 .services {
-  background-image: url("../images/background/bg1.jpg");
+  background-image: url("../images/background/service.jpg");
   background-size: cover !important;
   background-position: center !important;
   background-attachment: fixed !important;
@@ -1361,7 +1388,7 @@ section,
   color: #f1f4fa;
   /* Create a darkened overlay using a linear gradient */
   background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.7); /* Adjust the opacity as needed */
+  background-color: rgba(0, 0, 0, 0.753); /* Adjust the opacity as needed */
 }
 
 .services .section-title {
@@ -1371,6 +1398,15 @@ section,
 .services h3 {
   transition: ease-in-out 0.3s;
   color: #ffffff;
+  text-align: center; /* Centers text inside the section */
+
+  font-size: 48px; /* Adjust font size as needed */
+  margin-bottom: 20px; /* Adds space below the heading */
+}
+
+.services h2 {
+  transition: ease-in-out 0.3s;
+  color: #000000;
   text-align: center; /* Centers text inside the section */
 
   font-size: 48px; /* Adjust font size as needed */
@@ -1493,6 +1529,14 @@ section,
   font-size: 48px;
 }
 
+.features p {
+ color: #ffff;
+}
+
+.features h6 {
+  color: #ffff;
+ }
+
 .features .nav-link i {
   padding-right: 15px;
   font-size: 48px;
@@ -1502,6 +1546,7 @@ section,
   font-size: 18px;
   font-weight: 600;
   margin: 0;
+
 }
 
 .features .nav-link:hover {
@@ -1582,6 +1627,7 @@ section,
 
 }
 
+
 .services-2 .h2 {
   color: #f1f4fa;
 }
@@ -1604,6 +1650,10 @@ section,
   line-height: 0;
   margin-right: 30px;
   color: var(--accent-color);
+}
+
+.services-2 .row > div {
+  margin-bottom: 20px; /* Add space between each item */
 }
 
 .services-2 .service-item .title {
@@ -2252,19 +2302,24 @@ ul.social-links li a i {
 .border-bottom {
   border-bottom: 1px solid #e5e5e5;
 }
+.overlay {
+  position: relative;
+  height: 100vh; /* Ensure the container stays at full viewport height */
+}
 
 .overlay:before {
   content: "";
-  background: url(../images/background/objects.png) no-repeat;
-  background-size: 30%; /* Adjust the size as needed */
-  background-position: right 0%; /* Moves the image slightly towards the top */
+  background: url(../images/background/bg1.png) no-repeat;
+  background-size: 609px; /* Adjust the size as needed */
+
+  background-position: calc( 75%) top; /* Move it further from the right by 200px */
   position: absolute;
-  top: 0;
+  top: 20%;
   left: 0;
   right: 0;
   bottom: 0;
+  height: 100vh; /* Keep it at full height */
 }
-
 
 .overlay:after {
   content: "";
@@ -2275,6 +2330,7 @@ ul.social-links li a i {
   left: 0;
   right: 0;
   bottom: 0;
+  height: 100vh; /* Keep gradient overlay at full height */
 }
 
 .overlay-lighter:before {
@@ -2286,6 +2342,7 @@ ul.social-links li a i {
   left: 0;
   right: 0;
   bottom: 0;
+  height: 100vh; /* Ensure this lighter overlay is also full height */
 }
 
 .text-overlay:after {
@@ -2714,7 +2771,7 @@ border-radius: 30px;
 }
 
 .bg-common {
-  background: url(../images/background/bg.png) no-repeat;
+  background: url(../images/background/bgg.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
