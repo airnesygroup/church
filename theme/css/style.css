@@ -927,7 +927,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: 75vh;
   position: relative;
   padding: 80px 0;
   display: flex;
@@ -1851,6 +1851,7 @@ border-radius: 14px;
 .portfolio .portfolio-content img {
   transition: 0.3s;
   border-radius: 17px;
+  margin-bottom: 10%;
 }
 
 
@@ -2304,7 +2305,7 @@ ul.social-links li a i {
 }
 .overlay {
   position: relative;
-  height: 100vh; /* Ensure the container stays at full viewport height */
+  height: 75vh; /* Ensure the container stays at full viewport height */
 }
 
 .overlay:before {
@@ -2318,7 +2319,7 @@ ul.social-links li a i {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 100vh; /* Keep it at full height */
+  height: 75vh; /* Keep it at full height */
 }
 
 .overlay:after {
@@ -2330,7 +2331,7 @@ ul.social-links li a i {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 100vh; /* Keep gradient overlay at full height */
+  height: 75vh; /* Keep gradient overlay at full height */
 }
 
 .overlay-lighter:before {
@@ -2342,7 +2343,7 @@ ul.social-links li a i {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 100vh; /* Ensure this lighter overlay is also full height */
+  height: 75vh; /* Ensure this lighter overlay is also full height */
 }
 
 .text-overlay:after {
@@ -3182,7 +3183,7 @@ border-radius: 30px;
 .banner {
   padding: 250px 0 150px;
   position: relative;
-  height: 100vh;
+  height: 75vh;
 }
 @media (max-width: 1024px) {
   .banner {
