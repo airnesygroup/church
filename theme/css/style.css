@@ -11,7 +11,7 @@
 :root { 
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #273d4e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: rgb(113, 19, 219);    /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #9e8809;    /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -19,12 +19,13 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #e5eaee;  /* The default color of the main navmenu links */
-  --nav-hover-color: rgb(113, 19, 219);    /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #9e8809;      /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: rgb(110, 37, 194);     /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #d6b80a;       /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
+
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
@@ -927,14 +928,15 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 75vh;
+  min-height: 80vh;
   position: relative;
   padding: 80px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  border-bottom: 50px solid gold; /* Add this line */
 }
+
 
 
 .hero video {
@@ -962,11 +964,11 @@ section,
 
 
 
-.hero h2 {
+.hero h1 {
   margin: 0;
   font-size: 80px;
   font-weight: 400;
-  background: linear-gradient(90deg,rgb(0, 217, 255), rgb(114, 7, 236));  /* Initial gradient */
+  background: linear-gradient(90deg,rgb(255, 255, 255), rgb(255, 255, 255));  /* Initial gradient */
   -webkit-background-clip: text;
   animation: gradientShift 3s linear infinite; /* Animation */
 
@@ -982,7 +984,7 @@ section,
 .word-rotate {
   display: inline-block;
   transform-style: preserve-3d; /* Preserve the 3D effect */
-  background: linear-gradient(90deg,rgb(0, 217, 255), rgb(114, 7, 236));  /* Initial gradient */
+  background: linear-gradient(90deg,rgb(255, 255, 255), rgb(255, 255, 255));  /* Initial gradient */
   -webkit-background-clip: text;
   animation: gradientShift 3s linear infinite; /* Animation */
 
@@ -993,8 +995,7 @@ section,
 
 @keyframes rotateWords {
   0%, 88% { 
-    transform: rotateX(0deg); 
-    opacity: 1; /* Stay visible for 20 seconds */
+    transform: rotateX(0deg);     opacity: 1; /* Stay visible for 20 seconds */
   }
   
   90% {
@@ -1024,7 +1025,7 @@ section,
   font-size: 24px;
 }
 .hero .btn-get-started {
-  background: linear-gradient(90deg, rgb(0, 217, 255), rgb(114, 7, 236)); /* Gradient applied directly */
+  background: linear-gradient(90deg, rgb(204, 175, 10), rgb(83, 71, 2)); /* Gradient applied directly */
   color: var(--contrast-color);
   font-weight: 400;
   font-size: 14px;
@@ -1037,7 +1038,7 @@ section,
 }
 
 .hero .btn-get-started:hover {
-  background: linear-gradient(90deg, rgb(25, 233, 233), rgb(113, 19, 219)); /* Gradient applied directly */
+  background: linear-gradient(90deg, rgb(95, 81, 2), rgb(83, 71, 2)); /* Gradient applied directly */
 }
 
 .hero .btn-watch-video {
@@ -1079,7 +1080,7 @@ section,
 --------------------------------------------------------------*/
 
 .about  {
-  background-image: url("../img/bg.jpg");
+  background-image: url("../images/background/bg6.jpg");
   background-size: cover !important;
   background-position: center !important;
   background-attachment: fixed !important;
@@ -1087,8 +1088,12 @@ section,
   color: #f1f4fa;
   
 }
+
+
+
+
 .about .btn-get-started {
-  background: linear-gradient(90deg, rgb(0, 217, 255), rgb(114, 7, 236)); /* Gradient applied directly */
+  background: linear-gradient(90deg, rgb(204, 175, 10), rgb(83, 71, 2)); /* Gradient applied directly */
   color: var(--contrast-color);
   font-weight: 400;
   font-size: 14px;
@@ -1101,7 +1106,7 @@ section,
 }
 
 .about .btn-get-started:hover {
-  background: linear-gradient(90deg, rgb(25, 233, 233), rgb(113, 19, 219)); /* Gradient applied directly */
+  background: linear-gradient(90deg, rgb(66, 57, 2), rgb(83, 71, 2)); /* Gradient applied directly */
 }
 
 .about p {
@@ -1245,7 +1250,7 @@ border-radius: 14px;
 
 /* About2 Section */
 .about2 {
-  background-image: url("../img/bg1.jpg");
+  background-image: url("../img/bg6.jpg");
   background-size: cover !important;
   background-position: center !important;
   background-attachment: fixed !important;
@@ -1256,7 +1261,7 @@ border-radius: 14px;
 
 
 .about2 .btn-get-started {
-  background: linear-gradient(90deg, rgb(0, 217, 255), rgb(114, 7, 236)); /* Gradient applied directly */
+  background: linear-gradient(90deg, rgb(204, 175, 10), rgb(83, 71, 2)); /* Gradient applied directly */
   color: var(--contrast-color);
   font-weight: 400;
   font-size: 14px;
@@ -1269,7 +1274,7 @@ border-radius: 14px;
 }
 
 .about2 .btn-get-started:hover {
-  background: linear-gradient(90deg, rgb(25, 233, 233), rgb(113, 19, 219)); /* Gradient applied directly */
+  background: linear-gradient(90deg, rgb(114, 97, 3), rgb(83, 71, 2)); /* Gradient applied directly */
 }
 
 .about2 h3 {
@@ -1331,7 +1336,7 @@ border-radius: 14px;
 --------------------------------------------------------------*/
 
 .stats  {
-  background-image: url("../images/background/bg1.jpg");
+  background-image: url("../images/background/bg6.jpg");
   background-size: cover !important;
   background-position: center !important;
   background-attachment: fixed !important;
@@ -1437,6 +1442,8 @@ border-radius: 14px;
   text-align: center;
   border-radius: 8px;
   box-shadow: 0px 0 25px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10%;
+
 }
 
 .services .details .icon {
@@ -1495,7 +1502,7 @@ border-radius: 14px;
 # Features Section
 --------------------------------------------------------------*/
 .features  {
-  background-image: url("../images/background/bg1.jpg");
+  background-image: url("../images/background/bg6.jpg");
   background-size: cover !important;
   background-position: center !important;
   background-attachment: fixed !important;
@@ -1618,7 +1625,7 @@ border-radius: 14px;
 # Services 2 Section
 --------------------------------------------------------------*/
 .services-2  {
-  background-image: url("../images/background/bg1.jpg");
+  background-image: url("../images/background/bg6.jpg");
   background-size: cover !important;
   background-position: center !important;
   background-attachment: fixed !important;
@@ -2305,21 +2312,21 @@ ul.social-links li a i {
 }
 .overlay {
   position: relative;
-  height: 75vh; /* Ensure the container stays at full viewport height */
+  height: 80vh; /* Ensure the container stays at full viewport height */
 }
 
 .overlay:before {
   content: "";
   background: url(../images/background/bg1.png) no-repeat;
-  background-size: 609px; /* Adjust the size as needed */
+  background-size: 750px; /* Adjust the size as needed */
 
   background-position: calc( 75%) top; /* Move it further from the right by 200px */
   position: absolute;
-  top: 20%;
+  top: 18%;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 75vh; /* Keep it at full height */
+  height: 80vh; /* Keep it at full height */
 }
 
 .overlay:after {
@@ -2331,7 +2338,7 @@ ul.social-links li a i {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 75vh; /* Keep gradient overlay at full height */
+  height: 80vh; /* Keep gradient overlay at full height */
 }
 
 .overlay-lighter:before {
@@ -2343,7 +2350,7 @@ ul.social-links li a i {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 75vh; /* Ensure this lighter overlay is also full height */
+  height: 80vh; /* Ensure this lighter overlay is also full height */
 }
 
 .text-overlay:after {
@@ -2421,7 +2428,7 @@ ul.social-links li a i {
 }
 
 span.alternate {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
   font-style: italic;
   font-weight: 400;
 }
@@ -2431,7 +2438,7 @@ a {
 }
 
 a:focus, a:hover {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
   text-decoration: none;
 }
 
@@ -2444,11 +2451,11 @@ button:hover {
 }
 
 .bg-blue {
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
 }
 
 .bg-banner-one {
-  background: url(../images/background/bg.png) no-repeat;
+  background: url(../images/background/bg6.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -2588,7 +2595,7 @@ button:hover {
   height: 125px;
   width: 125px;
   font-size: 40px;
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
   border-radius: 100%;
   color: #fff;
   line-height: 125px;
@@ -2610,7 +2617,7 @@ button:hover {
   color: #b3b3b3;
 }
 .form-control:focus {
-  border: 1px solid rgb(114, 7, 236);
+  border: 1px solid rgb(173, 148, 4);
   box-shadow: none;
 }
 .form-control.white {
@@ -2704,14 +2711,14 @@ border-radius: 30px;
 
 .btn-main-md {
   padding: 15px 40px;
-  background: linear-gradient(90deg, rgb(0, 217, 255), rgb(114, 7, 236)); /* Gradient applied directly */
+  background: linear-gradient(90deg, rgb(204, 175, 10), rgb(83, 71, 2)); /* Gradient applied directly */
   color: #fff;
   outline: none;
   font-size: 0.9375rem;
 }
 .btn-main-md:hover {
   color: #fff;
-  background: linear-gradient(90deg, rgb(25, 233, 233), rgb(137, 71, 212)); /* Gradient applied directly */
+  background: linear-gradient(90deg, rgb(173, 148, 4), rgb(83, 71, 2)); /* Gradient applied directly */
 }
 .btn-main-md:focus {
   color: #fff;
@@ -2728,15 +2735,15 @@ border-radius: 30px;
   border-radius: 0;
 }
 .btn-transparent-md:hover {
-  background: rgb(114, 7, 236);
-  border-color: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
+  border-color: rgb(173, 148, 4);
   color: #fff;
 }
 
 .btn-main-sm {
   padding: 15px 35px;
   border-radius: 3px;
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
   color: #fff;
   outline: none;
   font-size: 13px;
@@ -2750,7 +2757,7 @@ border-radius: 30px;
 }
 
 .btn-white-md {
-  background: linear-gradient(90deg, rgb(255, 234, 0), rgb(37, 1, 241)); /* Gradient applied directly */
+  background: linear-gradient(90deg, rgb(204, 175, 10), rgb(83, 71, 2)); /* Gradient applied directly */
   color: #ffffff;
   padding: 10px 25px;
   font-size: 13px;
@@ -2760,7 +2767,7 @@ border-radius: 30px;
 
 }
 .btn-white-md:hover {
-  background: linear-gradient(90deg, rgb(62, 172, 192), rgb(112, 29, 207)); /* Gradient applied directly */
+  background: linear-gradient(90deg, rgb(128, 109, 3), rgb(83, 71, 2)); /* Gradient applied directly */
   color: #ffffff;
 }
 
@@ -2772,9 +2779,10 @@ border-radius: 30px;
 }
 
 .bg-common {
-  background: url(../images/background/bgg.jpg) no-repeat;
+  background: url(../images/background/bg4.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
+  height: 80vh;
 }
 
 .main-nav {
@@ -2870,7 +2878,7 @@ border-radius: 30px;
   }
 }
 .main-nav .navbar-nav .nav-item:hover .nav-link, .main-nav .navbar-nav .nav-item.active .nav-link {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
 }
 .main-nav .dropdown {
   position: relative;
@@ -2905,7 +2913,7 @@ border-radius: 30px;
 }
 .main-nav .dropdown .dropdown-menu .dropdown-item:hover {
   background: #fff;
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
 }
 @media (max-width: 991px) {
   .main-nav .dropdown .dropdown-menu {
@@ -2928,7 +2936,7 @@ border-radius: 30px;
     transform: translateY(30px);
   }
   .main-nav .dropdown:hover > .dropdown-menu {
-    border-top: 3px solid rgb(114, 7, 236);
+    border-top: 3px solid rgb(173, 148, 4);
     opacity: 1;
     display: block;
     visibility: visible;
@@ -2964,12 +2972,14 @@ border-radius: 30px;
 }
 .main-nav .dropdown-submenu:hover > .dropdown-toggle,
 .main-nav .dropdown-submenu.active > .dropdown-toggle {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
 }
 .main-nav .ticket {
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
   display: block;
-  padding: 34px 32px;
+  padding: 10px 15px;
+  border-radius: 17px;
+  margin-right: 2%;
 }
 @media (max-width: 1352px) {
   .main-nav .ticket {
@@ -3087,7 +3097,7 @@ border-radius: 30px;
   line-height: 50px;
 }
 .footer-main .block ul.social-links-footer li a:hover {
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
 }
 .footer-main .block ul.social-links-footer li a:hover i {
   color: #fff;
@@ -3101,7 +3111,7 @@ border-radius: 30px;
   font-family: "Montserrat", sans-serif;
 }
 .subfooter .copyright-text p a {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
 }
 @media (max-width: 767px) {
   .subfooter .copyright-text {
@@ -3113,7 +3123,7 @@ border-radius: 30px;
   height: 45px;
   width: 45px;
   text-align: center;
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
   float: right;
 }
 .subfooter .to-top i {
@@ -3183,8 +3193,19 @@ border-radius: 30px;
 .banner {
   padding: 250px 0 150px;
   position: relative;
-  height: 75vh;
+  height: 80vh;
 }
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1; /* Make sure it's above the background */
+}
+
+
 @media (max-width: 1024px) {
   .banner {
     padding: 100px 0;
@@ -3242,7 +3263,7 @@ border-radius: 30px;
 .banner .block h1,
 .banner .block h2 {
   font-size: 3.5rem;
-  background: linear-gradient(90deg, rgb(14, 153, 218), rgb(117, 13, 236)); /* Full gradient */
+  background: linear-gradient(90deg, rgb(204, 175, 10), rgb(83, 71, 2)); /* Gradient applied directly */
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -3337,7 +3358,7 @@ padding-top: 10%;
   overflow: hidden;
 }
 .banner-two .block h1 {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
   font-size: 88px;
 }
 @media (max-width: 575px) {
@@ -3379,7 +3400,7 @@ padding-top: 10%;
 
 .about {
 
-background: url(../images/background/bg1.jpg) no-repeat;
+background: url(../images/background/bg6.jpg) no-repeat;
 background-size: cover !important;
 background-position: center !important;
 background-attachment: fixed !important;
@@ -3447,7 +3468,7 @@ background-repeat: no-repeat !important;
   content: "";
   width: 60px;
   height: 3px;
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
   display: block;
   margin-top: 10px;
 }
@@ -3515,7 +3536,7 @@ background-repeat: no-repeat !important;
 
 /* About2 Section */
 .about2 {
-  background: url(../images/background/bg1.jpg) no-repeat;
+  background: url(../images/background/bg6.jpg) no-repeat;
   background-size: cover !important;
   background-position: center !important;
   background-attachment: fixed !important;
@@ -3526,7 +3547,7 @@ background-repeat: no-repeat !important;
 
 
 .about2 .btn-get-started {
-  background: linear-gradient(90deg, rgb(0, 217, 255), rgb(114, 7, 236)); /* Gradient applied directly */
+  background: linear-gradient(90deg, rgb(204, 175, 10), rgb(83, 71, 2)); /* Gradient applied directly */
   color: var(--contrast-color);
   font-weight: 400;
   font-size: 14px;
@@ -3539,7 +3560,7 @@ background-repeat: no-repeat !important;
 }
 
 .about2 .btn-get-started:hover {
-  background: linear-gradient(90deg, rgb(25, 233, 233), rgb(113, 19, 219)); /* Gradient applied directly */
+  background: linear-gradient(90deg, rgb(122, 105, 3), rgb(83, 71, 2)); /* Gradient applied directly */
 }
 
 .about2 h3 {
@@ -3611,7 +3632,7 @@ background-repeat: no-repeat !important;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
   opacity: 0.85;
   transition: 0.3s ease;
 }
@@ -3682,7 +3703,7 @@ background-repeat: no-repeat !important;
   margin-bottom: 0;
 }
 .speakers .speaker-item .content h5 a:hover {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
 }
 .speakers .speaker-item .content p {
   font-size: 0.875rem;
@@ -3709,7 +3730,7 @@ background-repeat: no-repeat !important;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
   font-weight: 500;
   display: block;
   border-radius: 0;
@@ -3725,7 +3746,7 @@ background-repeat: no-repeat !important;
   font-weight: 400;
 }
 .schedule .schedule-tab ul li.nav-item a.active {
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
   color: #fff;
   position: relative;
 }
@@ -3814,7 +3835,7 @@ background-repeat: no-repeat !important;
 }
 .schedule .schedule-contents .schedule-item li.headings {
   padding: 22px 40px;
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
 }
 .schedule .schedule-contents .schedule-item li.headings div {
   color: #fff;
@@ -3861,7 +3882,7 @@ background-repeat: no-repeat !important;
   transform: scale(1.01);
 }
 .schedule .schedule-contents .schedule-item li.schedule-details .block:hover span.name {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
 }
 .schedule .download-button {
   padding-top: 40px;
@@ -3908,7 +3929,7 @@ background-repeat: no-repeat !important;
   font-weight: 400;
 }
 .schedule.two .schedule-tab ul li.nav-item a.active {
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
   color: #fff;
   position: relative;
 }
@@ -3927,7 +3948,7 @@ background-repeat: no-repeat !important;
   height: 0;
   border-style: solid;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent rgb(114, 7, 236);
+  border-color: transparent transparent transparent rgb(173, 148, 4);
 }
 @media (max-width: 991px) {
   .schedule.two .schedule-tab ul li.nav-item a.active:after {
@@ -3997,7 +4018,7 @@ background-repeat: no-repeat !important;
 }
 .schedule.two .schedule-contents .schedule-item li.headings {
   padding: 25px 0;
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
 }
 .schedule.two .schedule-contents .schedule-item li.headings div {
   color: #fff;
@@ -4050,7 +4071,7 @@ background-repeat: no-repeat !important;
   transform: scale(1);
 }
 .schedule.two .schedule-contents .schedule-item li.schedule-details .block:hover span.name {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
 }
 
 .ticket-feature {
@@ -4120,7 +4141,7 @@ background-repeat: no-repeat !important;
   position: relative;
   padding: 150px 10%;
   height: 100%;
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
 }
 @media (max-width: 575px) {
   .ticket-feature .block-2 {
@@ -4276,7 +4297,7 @@ background-repeat: no-repeat !important;
   margin-right: 15px;
 }
 .pricing .pricing-item .pricing-body ul.feature-list li p span.available {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
 }
 .pricing .pricing-item .pricing-body ul.feature-list li p span.unavailable {
   color: #d2d2d2;
@@ -4292,8 +4313,8 @@ background-repeat: no-repeat !important;
   box-shadow: 0px 0px 30px 0px rgba(11, 29, 66, 0.15);
 }
 .pricing .pricing-item.featured .pricing-heading {
-  background: rgb(114, 7, 236);
-  border-bottom: 1px solid rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
+  border-bottom: 1px solid rgb(173, 148, 4);
 }
 .pricing .pricing-item.featured .pricing-heading .title h6 {
   color: #fff;
@@ -4352,7 +4373,7 @@ background-repeat: no-repeat !important;
   padding: 70px 40px 45px;
 }
 .pricing.two .pricing-item .pricing-body ul.feature-list li p span.available {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
 }
 .pricing.two .pricing-item.featured .pricing-heading:before {
   border-color: rgb(114, 7, 236) transparent transparent transparent;
@@ -4366,7 +4387,7 @@ background-repeat: no-repeat !important;
   margin-bottom: 30px;
 }
 .sponsors .sponsor-title h5 {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
 }
 .sponsors .block {
   margin-bottom: 40px;
@@ -4399,7 +4420,7 @@ background-repeat: no-repeat !important;
   height: 55px;
 }
 .sponsors .block .image-block:hover {
-  border: 1px solid rgb(114, 7, 236);
+  border: 1px solid rgb(173, 148, 4);
 }
 .sponsors .sponsor-btn {
   margin-top: 10px;
@@ -4418,7 +4439,7 @@ background-repeat: no-repeat !important;
   padding: 45px 50px 50px 50px;
   top: 80px;
   left: 10%;
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
 }
 @media (max-width: 575px) {
   .map .address-block {
@@ -4585,7 +4606,7 @@ background-repeat: no-repeat !important;
 .video-promo .content-block a i.video {
   height: 125px;
   width: 125px;
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
   display: inline-block;
   font-size: 40px;
   color: #fff;
@@ -4634,10 +4655,10 @@ background-repeat: no-repeat !important;
   color: #161616;
 }
 .testimonial .testimonial-slider .owl-dots .owl-dot:hover span {
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
 }
 .testimonial .testimonial-slider .owl-dots .owl-dot.active span {
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
 }
 
 .single-speaker .block {
@@ -4664,7 +4685,7 @@ background-repeat: no-repeat !important;
   margin-bottom: 20px;
 }
 .single-speaker .block .content-block .profession p {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
   font-size: 0.9375rem;
 }
 .single-speaker .block .content-block .details {
@@ -4692,8 +4713,8 @@ background-repeat: no-repeat !important;
   line-height: 40px;
 }
 .single-speaker .block .content-block .social-profiles ul.social-list li a:hover {
-  background: rgb(114, 7, 236);
-  border: 1px solid rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
+  border: 1px solid rgb(173, 148, 4);
   color: #fff;
 }
 .single-speaker .block-2 {
@@ -4732,7 +4753,7 @@ background-repeat: no-repeat !important;
   left: -25px;
   content: "\f10c";
   font-family: FontAwesome;
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
 }
 .single-speaker .block-2 .skills .skill-bar {
   margin-bottom: 20px;
@@ -4745,7 +4766,7 @@ background-repeat: no-repeat !important;
   overflow: visible;
 }
 .single-speaker .block-2 .skills .skill-bar .progress .progress-bar {
-  background-color: rgb(114, 7, 236);
+  background-color: rgb(173, 148, 4);
 }
 .single-speaker .block-2 .skills .skill-bar .progress .progress-bar span {
   font-family: "Montserrat", sans-serif;
@@ -4770,7 +4791,7 @@ background-repeat: no-repeat !important;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
   opacity: 0.85;
   transition: 0.3s ease;
 }
@@ -4849,11 +4870,11 @@ background-repeat: no-repeat !important;
 }
 .speakers-full-width .speaker-slider .slick-prev:hover:before,
 .speakers-full-width .speaker-slider .slick-next:hover:before {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
 }
 .speakers-full-width .speaker-slider .slick-prev:before,
 .speakers-full-width .speaker-slider .slick-next:before {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
   font-family: FontAwesome;
 }
 
@@ -4880,11 +4901,11 @@ background-repeat: no-repeat !important;
   box-shadow: none;
 }
 .controls .btn:hover {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
 }
 
 .mixitup-control-active {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
 }
 
 /* Container
@@ -4917,7 +4938,7 @@ background-repeat: no-repeat !important;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
   opacity: 0;
   transform: scale(0.8);
   transition: 0.3s ease;
@@ -4992,7 +5013,7 @@ background-repeat: no-repeat !important;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
   opacity: 0;
   transform: scale(0.8);
   transition: 0.3s ease;
@@ -5043,7 +5064,7 @@ background-repeat: no-repeat !important;
   width: 65px;
   height: 65px;
   text-align: center;
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5069,7 +5090,7 @@ background-repeat: no-repeat !important;
   color: #222222;
 }
 .news .blog-post .post-content .post-title h2 a:hover {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
 }
 .news .blog-post .post-content .post-meta ul {
   margin-bottom: 0;
@@ -5108,7 +5129,7 @@ background-repeat: no-repeat !important;
 .news .blog-post.single .post-details .quotes {
   background: #f5f5f8;
   padding: 30px;
-  border-left: 3px solid rgb(114, 7, 236);
+  border-left: 3px solid rgb(173, 148, 4);
   margin: 15px 0;
 }
 .news .blog-post.single .post-details .quotes blockquote {
@@ -5152,7 +5173,7 @@ background-repeat: no-repeat !important;
   font-size: 15px;
 }
 .news .blog-post.single .post-details .share-block .tag ul li a:hover {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
 }
 .news .blog-post.single .post-details .share-block .share {
   flex-basis: 50%;
@@ -5207,8 +5228,8 @@ background-repeat: no-repeat !important;
   line-height: 38px;
 }
 .news .blog-post.single .post-details .share-block .share ul.social-links-share li a:hover {
-  background: rgb(114, 7, 236);
-  border-color: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
+  border-color: rgb(173, 148, 4);
 }
 .news .blog-post.single .post-details .share-block .share ul.social-links-share li a:hover i {
   color: #fff;
@@ -5247,7 +5268,7 @@ background-repeat: no-repeat !important;
   margin-right: 7px;
 }
 .news .comments .comment .media-body ul li a {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
 }
 .news .comment-form h5 {
   font-weight: 400;
@@ -5307,7 +5328,7 @@ ul.pagination .active a {
   border-right: none;
 }
 .widget.search .input-group .input-group-addon {
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
   color: #fff;
   border: none;
   border-radius: 0;
@@ -5331,7 +5352,7 @@ ul.pagination .active a {
   display: block;
 }
 .widget.category ul.category-list li a:hover {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
 }
 .widget.category ul.category-list li:last-child {
   margin-bottom: 5px;
@@ -5344,9 +5365,9 @@ ul.pagination .active a {
   font-size: 15px;
 }
 .widget.tags ul li a:hover {
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
   color: #fff;
-  border-color: rgb(114, 7, 236);
+  border-color: rgb(173, 148, 4);
 }
 .widget.latest-post .media {
   padding: 15px 0;
@@ -5364,7 +5385,7 @@ ul.pagination .active a {
   font-weight: 400;
 }
 .widget.latest-post .media .media-body h6 a:hover {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
 }
 .widget.latest-post .media .media-body p span {
   margin-right: 10px;
@@ -5425,7 +5446,7 @@ ul.pagination .active a {
   left: 0;
   top: 37px;
   content: "";
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
   width: 30px;
   height: 2px;
 }
@@ -5437,7 +5458,7 @@ ul.pagination .active a {
   width: 65px;
   height: 65px;
   text-align: center;
-  background: rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5518,8 +5539,8 @@ ul.pagination .active a {
   transition: 0.3s ease;
 }
 .testimonial .testimonial-item .comment:hover {
-  background: rgb(114, 7, 236);
-  border: 1px solid rgb(114, 7, 236);
+  background: rgb(173, 148, 4);
+  border: 1px solid rgb(173, 148, 4);
 }
 .testimonial .testimonial-item .comment:hover p {
   color: #fff;
@@ -5548,7 +5569,7 @@ ul.pagination .active a {
 }
 .testimonial .testimonial-item .media .media-body .profession p {
   font-size: 0.8126rem;
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
 }
 
 .error .block {
@@ -5560,7 +5581,7 @@ ul.pagination .active a {
 }
 .error .block h3 {
   font-weight: 400;
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
   margin-bottom: 40px;
 }
 .error .block h3 span {
@@ -5590,7 +5611,7 @@ ul.pagination .active a {
   padding: 15px 20px;
 }
 .faq .accordion-block #accordion .card .collapse.show + .card-header h5 a, .faq .accordion-block #accordionTwo .card .collapse.show + .card-header h5 a {
-  color: rgb(114, 7, 236);
+  color: rgb(173, 148, 4);
 }
 
 .contact-form .form-control {
