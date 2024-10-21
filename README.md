@@ -48,7 +48,7 @@ Now you get a `theme` folder that has all the changes you have made. you can use
 If you have questions or need help integrating the product please [contact us](mbelenzialexander1@gmail.com) instead of opening an issue.
 <!-- reporting issue -->
 
- have questions or need help integrating the product please [contact us](mailto:mehedi@themefisher.com) instead of opening an issue.
+ have questions or need help integrating the product please [contact us](mbelenzialexander1@gmail.com) instead of opening an issue. mbelenzialexander1@gmail.com
 
 <!-- licence -->
 ## License
