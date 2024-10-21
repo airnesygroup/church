@@ -1223,7 +1223,7 @@ border-radius: 14px;
 
 @media (max-width: 768px) {
   .generosity h3 {
-    padding-top: 1%;
+    padding-top: 0.5%;
     padding-bottom: 10%;
     font-size: 30px;
     margin-bottom: 10px;
