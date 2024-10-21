@@ -1,70 +1,17 @@
-# Eventre By Themefisher
+# Chuch website template by Mbelenzi
 
-Eventre is a clean and powerful Bootstrap template dedicated to all kinds of Events, Conferences and Meetups. It offers many various possibilities which will help you easily create a beautiful, stunning and unique website.
+
 
 <!-- demo -->
 ## Example Site
 
-| [![](screenshots/home1.jpg)](https://demo.themefisher.com/eventre/) | [![](screenshots/home2.jpg)](https://demo.themefisher.com/eventre/homepage-two.html) | [![](screenshots/about.jpg)](https://demo.themefisher.com/eventre/about.html) | [![](screenshots/speakers.jpg)](https://demo.themefisher.com/eventre/speakers.html) |
+| [![](screenshots/home1.png)](https://demo.themefisher.com/eventre/) | [![](screenshots/home2.png)](https://demo.themefisher.com/eventre/homepage-two.html) | [![](screenshots/about.png)](https://demo.themefisher.com/eventre/about.html)  |
 |:---:|:---:|:---:|:---:|
-| **Home 1**  | **Home 2**  | **About** | **Speaker** |
-| [![](screenshots/speaker-details.jpg)](https://demo.themefisher.com/eventre/single-speaker.html) | [![](screenshots/gallery.jpg)](https://demo.themefisher.com/eventre/gallery.html) | [![](screenshots/gallery2.jpg)](https://demo.themefisher.com/eventre/gallery-two.html) | [![](screenshots/testimonials.jpg)](https://demo.themefisher.com/eventre/testimonial.html) |
-| **Speaker Details**  | **Gallery**  | **Gallery 2** | **Testimonial** |
-| [![](screenshots/pricing.jpg)](https://demo.themefisher.com/eventre/pricing.html) | [![](screenshots/schedule.jpg)](https://demo.themefisher.com/eventre/schedule.html) | [![](screenshots/sponsors.jpg)](https://demo.themefisher.com/eventre/sponsors.html) | [![](screenshots/faq.jpg)](https://demo.themefisher.com/eventre/FAQ.html) |
-| **Pricing**  | **Schedule**  | **Sponsors** | **FAQ** |
-| [![](screenshots/news.jpg)](https://demo.themefisher.com/eventre/news.html) | [![](screenshots/newsrs.jpg)](https://demo.themefisher.com/eventre/news-right-sidebar.html) | [![](screenshots/newsls.jpg)](https://demo.themefisher.com/eventre/news-left-sidebar.html) | [![](screenshots/news-details.jpg)](https://demo.themefisher.com/eventre/news-single.html) |
-| **News** | **News Right Sidebar**  | **News Left Sidebar**  |**News Details** |
-| [![](screenshots/contact.jpg)](https://demo.themefisher.com/eventre/contact.html) | [![](screenshots/404.jpg)](https://demo.themefisher.com/eventre/404.html)
-| **Contact** | **404**  |
+| **Home 1**  | **Home 2**  | **About**  |
 
-👉🏻[View Live Preview](https://demo.themefisher.com/eventre/)
 
-<!-- resources -->
-## Pages
+👉🏻[View Live Preview](https://church999.vercel.app/)
 
-* **Home 1**
-* **Home 2**
-* **About**
-* **Schedule**
-* **Speakers**
-* **Speakers Single**
-* **Gallery**
-* **Gallery Two**
-* **Sponsors**
-* **Pricing**
-* **Testimonials**
-* **FAQ**
-* **News**
-* **News Left Sidebar**
-* **News Right Sidebar**
-* **News Single**
-* **Contact**
-* **404**
-
-<!-- download -->
-## Download And installation
-
-Download this template from [Github](https://github.com/themefisher/eventre/archive/main.zip)
-
-<!-- installation -->
-### Basic Usages
-
-After downloading the template, you can simply edit the HTML and CSS files from the `theme` folder. To preview the changes you make to the code, you can open the index.html file in your web browser.
-
-### Advanced Usage
-
-For advanced usage, you have some prerequisites to install. Then you can run it on your localhost. You can view the package.json file to see which scripts are included.
-
-#### Install prerequisites (once for a machine)
-
-* **Node Installation:** [Install node js](https://nodejs.org/en/download/)
-* **Gulp Installation:** Install gulp globally from your terminal
-
-```
-npm install --global gulp-cli
-```
-
-Or visit the original [Gulp docs](https://gulpjs.com/docs/en/getting-started/quick-start)
 
 #### Local setup
 
@@ -94,29 +41,21 @@ npm run build
 
 Now you get a `theme` folder that has all the changes you have made. you can use this folder as your main theme.
 
-👉🏻 [visit documentation](https://docs.themefisher.com/eventre/)
 
 <!-- support -->
 ## Technical Support or Questions (Paid)
 
-If you have questions or need help integrating the product please [contact us](mailto:mehedi@themefisher.com) instead of opening an issue.
+If you have questions or need help integrating the product please [contact us](mbelenzialexander1@gmail.com) instead of opening an issue.
 <!-- reporting issue -->
-## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for the Eventre Template. Please Search [existing issues](https://github.com/themefisher/event/issues). It’s possible someone has already reported the same problem.
-If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/themefisher/event/issues).
-
-<!-- support -->
-## Technical Support or Questions (Paid)
-
-If you have questions or need help integrating the product please [contact us](mailto:mehedi@themefisher.com) instead of opening an issue.
+ have questions or need help integrating the product please [contact us](mailto:mehedi@themefisher.com) instead of opening an issue.
 
 <!-- licence -->
 ## License
 
-Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
+Copyright (c) 2024 - Present, Designed & Developed by [Coddextech](https://coddextech.com)
 
-**Code License:** Released under the [MIT](https://github.com/themefisher/eventre/blob/main/LICENSE) license.
+**Code License:** Released under the [MIT](https://github.com/coddextech/coddex/blob/main/LICENSE) license.
 
 
 <!-- resources -->
