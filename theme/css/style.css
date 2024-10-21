@@ -2824,7 +2824,7 @@ border-radius: 30px;
 }
 
 .bg-common {
-  background: url(../images/background/bg4.jpg) no-repeat;
+  background: url(../images/background/bg2.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -2832,7 +2832,7 @@ border-radius: 30px;
 
 @media screen and (max-width: 750px) {
   .bg-common {
-    background: url(../images/background/bg5.jpg) no-repeat;
+    background: url(../images/background/bg.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
   }
