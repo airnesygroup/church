@@ -1086,6 +1086,8 @@ section,
   background-attachment: fixed !important;
   background-repeat: no-repeat !important;
   color: #f1f4fa;
+  border-top: 50px solid  rgb(83, 72, 5);
+
   
 }
 
@@ -2808,18 +2810,29 @@ border-radius: 30px;
 
 
 .main-nav .navbar-brand {
-  padding: 35px 40px 35px 50px;
+  padding: 1.5%;
 }
-@media (max-width: 1200px) {
-  .main-nav .navbar-brand {
-    padding: 20px 30px;
+
+
+.navbar-logo {
+  width: 120px; /* Default size */
+}
+
+@media (max-width: 1024px) {
+  .navbar-logo  {
+    width: 100px; /* Medium screens */
   }
 }
-@media (max-width: 767px) {
-  .main-nav .navbar-brand {
-    border-right: none;
+
+@media (max-width: 768px) {
+  .navbar-logo {
+    width: 70px; /* Smaller screens */
   }
 }
+
+
+
+
 .main-nav .navbar-toggler {
   font-size: 1.5rem;
   margin-right: 15px;
@@ -4910,14 +4923,7 @@ background-repeat: no-repeat !important;
 
 /* Container
 ---------------------------------------------------------------------- */
-.gallery-wrapper {
-  /* Target Elements
-    ---------------------------------------------------------------------- */
-  /* Grid Breakpoints
-    ---------------------------------------------------------------------- */
-  /* 2 Columns */
-  /* 3 Columns */
-}
+
 .gallery-wrapper .gallery-item {
   padding: 15px;
 }

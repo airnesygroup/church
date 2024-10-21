@@ -2,11 +2,12 @@ window.marker = null;
 
 function initialize() {
   var map;
-  var latitude = $('#map').attr('data-latitude');
-  var longitude = $('#map').attr('data-longitude');
-  var mapMarker = $('#map').attr('data-marker');
-  var mapMarkerName = $('#map').attr('data-marker-name');
-  var nottingham = new google.maps.LatLng(latitude, longitude);
+  // Update with Kihunguro Church coordinates
+  var latitude = -1.138270;
+  var longitude = 36.970850;
+  var mapMarker = $('#map').attr('data-marker'); // Marker image source
+  var mapMarkerName = "Kihunguro Church"; // Marker title
+  var kihunguro = new google.maps.LatLng(latitude, longitude);
   var style = [
       {
           "featureType": "road.highway",
@@ -70,16 +71,16 @@ function initialize() {
       }
   ];
   var mapOptions = {
-    center: nottingham,
+    center: kihunguro,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     backgroundColor: "#000",
     zoom: 10,
-    panControl: !1,
-    zoomControl: !0,
-    mapTypeControl: !1,
-    scaleControl: !1,
-    streetViewControl: !1,
-    overviewMapControl: !1,
+    panControl: false,
+    zoomControl: true,
+    mapTypeControl: false,
+    scaleControl: false,
+    streetViewControl: false,
+    overviewMapControl: false,
     zoomControlOptions: {
       style: google.maps.ZoomControlStyle.LARGE
     }
@@ -93,13 +94,13 @@ function initialize() {
   var marker_image = mapMarker;
   var pinIcon = new google.maps.MarkerImage(marker_image, null, null, null, new google.maps.Size(40, 60));
   marker = new google.maps.Marker({
-    position: nottingham,
+    position: kihunguro,
     map: map,
     icon: pinIcon,
     title: mapMarkerName
-  })
+  });
 }
 var map = document.getElementById('map');
 if (map != null) {
-  google.maps.event.addDomListener(window, 'load', initialize)
+  google.maps.event.addDomListener(window, 'load', initialize);
 }
