@@ -2331,6 +2331,13 @@ ul.social-links li a i {
   height: 80vh; /* Keep it at full height */
 }
 
+@media (max-width: 720px) {
+  .overlay:before {
+    background-size: 400px; /* Adjust the size as needed */
+    background-position: calc(50%) top; /* Center the image if necessary */
+  }
+}
+
 .overlay:after {
   content: "";
   background: -webkit-linear-gradient(-45deg, #1e5799 0%, #1d1546 0%, #1a0b25 100%, #207cca 100%);
