@@ -2827,7 +2827,15 @@ border-radius: 30px;
   background: url(../images/background/bg4.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 80vh;
+  height: 100vh;
+}
+
+@media screen and (max-width: 750px) {
+  .bg-common {
+    background: url(../images/background/bg5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
 }
 
 .main-nav {
